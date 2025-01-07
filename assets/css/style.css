@@ -39,6 +39,24 @@ body {
     font-weight: 700;
 }
 
+.work-description {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.work-description a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
 .navbar a {
     position: relative;
     font-size: 18px;
@@ -68,26 +86,85 @@ body {
     height: 600px;
 }
 
+
+#home h1, p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 #work {
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background: #3D3D3D;
     padding: 24px;
+    flex-wrap: wrap;
 }
 
 .frame-inner {
     padding: 20px;
     width: 100%;
     border: solid 2px #fff;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .frame-inner h1 {
     color: #fff;
+    text-align: center;
+    padding-bottom: 60px;
 }
 
-.outer-content {
-
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 sütunlu düzen */
+  grid-gap: 20px; /* Videolar arasında boşluk */
+  justify-items: center; /* Her öğeyi yatayda ortalar */
+  align-items: center; /* Her öğeyi dikeyde ortalar */
+  width: 100%; /* Tam genişlik */
+  max-width: 2000px; /* Maksimum genişlik */
+  margin: 0 auto; /* Sayfa ortalanması için */
 }
 
-.inner-content {
+.video-container video {
+    border: solid 1px #fff;
+    padding: 8px;
+  width: 100%; /* Videoların genişliği konteynır kadar */
+  max-width: 400px; /* Maksimum genişlik */
+  height: auto; /* Yüksekliği oranla ayarlayacak */
+}
+
+#About {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5ECD5;
+    height: 600px;
+}
+
+#Contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3D3D3D;
+    padding: 24px;
+    flex-wrap: wrap;
+    height: 500px;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5ECD5;
+    width: 100%;
+    height: 120px;
 }
