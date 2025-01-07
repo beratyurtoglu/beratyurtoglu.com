@@ -72,12 +72,22 @@ body {
     position: relative;
     display: flex;
     background: #3D3D3D;
-    top: 0px;
-    left: 0;
+    padding: 24px;
 }
 
 .frame-inner {
-    margin: 10px;
+    padding: 20px;
+    width: 100%;
     border: solid 2px #fff;
-    height: 200px;
+}
+
+.frame-inner h1 {
+    color: #fff;
+}
+
+.outer-content {
+
+}
+
+.inner-content {
 }
