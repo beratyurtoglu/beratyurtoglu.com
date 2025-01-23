@@ -18,11 +18,17 @@
     font-style: normal;
 }
 
+body {
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
 
-body,
 header,
 nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -82,4 +88,82 @@ a {
 
 .home {
     color: black;
+}
+
+footer {
+    margin-top: auto;
+    background: white;
+    color: #252525;
+    text-align: center;
+    font-family: 'AeonikTrial', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#footer_bottom span {
+    color: #F95F19;
+}
+
+#footer_bottom {
+    width: 100%;
+    height: 117px;
+    align-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 309px);
+}
+
+.container {
+    display: flex;
+    gap: 90px;
+}
+
+.container_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_box {
+    width: auto;
+    height: 326px;
+}
+
+.right_box {
+    border-radius: 45px;
+    width: 472px;
+    height: 575px;
+    background: #F95F19;
+}
+
+.left_box h1 {
+    font-family: 'AeonikTrial', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+#name_surname {
+    color: #F95F19;
+}
+
+.left_box p, h2 {
+    font-family: 'AeonikTrial', sans-serif;
+    font-weight: 700;
+    color: #252525;
+}
+
+.left_box h2 {
+    font-size: 36px;
+}
+
+#ve {
+    color: #F95F19;
+}
+
+.left_box p {
+    font-size: 16px;
 }
