@@ -22,6 +22,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    padding: 0px;
 }
 
 header,
@@ -150,6 +151,10 @@ main {
     color: #F95F19;
 }
 
+.left_box p {
+    margin-top: 53px;
+}
+
 .left_box p, h2 {
     font-family: 'AeonikTrial', sans-serif;
     font-weight: 700;
@@ -166,4 +171,37 @@ main {
 
 .left_box p {
     font-size: 16px;
+}
+
+.main_buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 53px;
+}
+
+#left_box_portfolio {
+    width: 205px;
+    height: 61px;
+    background: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left_box_contact {
+    width: 205px;
+    height: 61px;
+    background: #F95F19;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left_box_portfolio a, #left_box_contact a {
+    color: white;
+    font-family: 'AeonikTrial', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
 }
