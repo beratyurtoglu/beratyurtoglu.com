@@ -1,207 +1,94 @@
-@font-face {
-    font-family: 'AeonikTrial';
-    src: url('/fonts/AeonikTrial-Regular.woff2') format('woff2'),
-        url('/fonts/AeonikTrial-Regular.woff') format('woff'),
-        url('/fonts/AeonikTrial-Regular.ttf') format('truetype');
-    font-weight: 400;
-    /* Regular */
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'AeonikTrial';
-    src: url('/fonts/AeonikTrial-Bold.woff2') format('woff2'),
-        url('/fonts/AeonikTrial-Bold.woff') format('woff'),
-        url('/fonts/AeonikTrial-Bold.ttf') format('truetype');
-    font-weight: 700;
-    /* Bold */
-    font-style: normal;
-}
-
-body {
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0px;
-}
-
-header,
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header {
-    width: 100%;
-    height: 224px;
-    justify-content: center;
-    align-items: center;
-}
-
-nav {
-    background: #F95F19;
-    width: 883px;
-    height: 85px;
-    border-radius: 42.5px;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 11px;
-    padding-right: 37px;
-    font-family: 'AeonikTrial', sans-serif;
-    font-weight: 700;
-}
-
-#nav_selection {
-    width: 144px;
-    height: 68px;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 34px;
-}
-
-#nav_logo {
-    width: 58px;
-    height: 58px;
-    border-radius: 50px;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "MuseoModerno", serif;
-    font-weight: 700;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
+	color: #D8C4B6;
 }
 
-.nav_title {
-    color: white;
-    font-size: 24px;
+/* Home Page */
+.home-page {
+	font-family: 'AeonikTrial', sans-serif;
+	height: 100vh;
+	background: #213555;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.logo {
-    color: black;
+h1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 3rem;
+	color: #FFFAEC;
+	margin-bottom: 20px;
 }
 
-.home {
-    color: black;
+.menu {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 1.5rem;
+	gap: 25px;
 }
 
-footer {
-    margin-top: auto;
-    background: white;
-    color: #252525;
-    text-align: center;
-    font-family: 'AeonikTrial', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+.about-page {
+	font-family: 'AeonikTrial', sans-serif;
+	height: 100vh;
+	background: #213555;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-#footer_bottom span {
-    color: #F95F19;
+.text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
 }
 
-#footer_bottom {
-    width: 100%;
-    height: 117px;
-    align-content: center;
+.text p {
+	font-size: 1.5rem;
+	max-width: 30%;
+	text-align: center;
+	color: #D8C4B6;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 309px);
+.about-menu {
+	display: flex;
+	gap: 50px;
+	margin-top: 20px;
 }
 
-.container {
-    display: flex;
-    gap: 90px;
+.portfolio-page {
+	font-family: 'AeonikTrial', sans-serif;
+	height: 100vh;
+	background: #213555;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.container_left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contact-page {
+	font-family: 'AeonikTrial', sans-serif;
+	height: 100vh;
+	background: #213555;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.left_box {
-    width: auto;
-    height: 326px;
-}
-
-.right_box {
-    border-radius: 45px;
-    width: 472px;
-    height: 575px;
-    background: #F95F19;
-}
-
-.left_box h1 {
-    font-family: 'AeonikTrial', sans-serif;
-    font-weight: 700;
-    font-size: 60px;
-}
-
-#name_surname {
-    color: #F95F19;
-}
-
-.left_box p {
-    margin-top: 53px;
-}
-
-.left_box p, h2 {
-    font-family: 'AeonikTrial', sans-serif;
-    font-weight: 700;
-    color: #252525;
-}
-
-.left_box h2 {
-    font-size: 36px;
-}
-
-#ve {
-    color: #F95F19;
-}
-
-.left_box p {
-    font-size: 16px;
-}
-
-.main_buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 53px;
-}
-
-#left_box_portfolio {
-    width: 205px;
-    height: 61px;
-    background: black;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#left_box_contact {
-    width: 205px;
-    height: 61px;
-    background: #F95F19;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#left_box_portfolio a, #left_box_contact a {
-    color: white;
-    font-family: 'AeonikTrial', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
+.contact-page h2 {
+	margin-bottom: 15px;
+	color: wheat;
 }
