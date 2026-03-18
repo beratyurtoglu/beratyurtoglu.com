@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Berat Yurtoğlu | Computer Engineer & Video Editor</title>
+
+    <meta
+      name="description"
+      content="Berat Yurtoğlu'nun kişisel portfolyo sitesi. Bilgisayar mühendisliği, React, modern web teknolojileri ve profesyonel video edit projeleri."
+    />
+
+    <meta
+      name="keywords"
+      content="Berat Yurtoğlu, full stact developer, react, web developer, video editor, portfolio"
+    />
+
+    <meta name="author" content="Berat Yurtoğlu" />
+
+    <link rel="icon" type="image/png" href="/icon.png" />
+
+    <meta property="og:title" content="Berat Yurtoğlu | Portfolio" />
+    <meta
+      property="og:description"
+      content="Frontend Developer & Video Editor."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://beratyurtoglu.com" />
+    <meta property="og:image" content="https://beratyurtoglu.com/og-image.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Berat Yurtoğlu | Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Computer Engineer & Video Editor portfolio."
+    />
+    <meta name="twitter:image" content="https://beratyurtoglu.com/og-image.png" />
+  </head>
+
+  <body>
+    <div id="initial-loader">
+    <img src="/Logo.png" alt="Logo" class="loader-logo" />
+  </div>
+
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.jsx"></script>
+
+  <style>
+    #initial-loader {
+      position: fixed;
+      inset: 0;
+      background: #0b0b0b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+
+    .loader-logo {
+      width: 96px;
+      height: 96px;
+      opacity: 0.85;
+      animation: softPulse 1.8s ease-in-out infinite;
+    }
+
+    @keyframes softPulse {
+      0% {
+        transform: scale(0.96);
+        opacity: 0.6;
+      }
+      50% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(0.96);
+        opacity: 0.6;
+      }
+    }
+
+    #initial-loader.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+  </style>
+  </body>
+</html>
