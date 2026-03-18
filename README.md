@@ -1,16 +1,31 @@
-# React + Vite
+# 🎥 Berat Yurtoglu - Video Portfolio & CMS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, modern web teknolojileri kullanılarak geliştirilmiş, dinamik içerik yönetimine (CMS) sahip profesyonel bir video portfolyo sitesidir. Videolar statik kodlar yerine **Firebase Firestore** üzerinden gerçek zamanlı (real-time) olarak çekilmektedir.
 
-Currently, two official plugins are available:
+## 🚀 Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dinamik İçerik:** Videolar Firebase Firestore'dan anlık olarak yüklenir; kod güncellemesi gerektirmez.
+- **Admin Paneli:** `/admin` yolu üzerinden erişilebilen, sadece yetkili kullanıcının girebildiği yönetim arayüzü.
+- **Firebase Auth:** Güvenli giriş sistemi (Email/Password).
+- **Responsive Tasarım:** Mobil, tablet ve masaüstü cihazlarla tam uyumlu (Tailwind CSS).
+- **Modern Animasyonlar:** Framer Motion kullanılarak akıcı geçişler ve modal efektleri.
+- **Sayfalama (Pagination):** Çok sayıda video için performanslı sayfalama sistemi.
 
-## React Compiler
+## 🛠️ Kullanılan Teknolojiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React.js, Vite
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Backend:** Firebase Firestore (NoSQL)
+- **Authentication:** Firebase Auth
+- **Routing:** React Router DOM
 
-## Expanding the ESLint configuration
+## 📂 Proje Yapısı
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── components/       # Tekrar kullanılabilir bileşenler (VideoItem, vb.)
+├── pages/            # Ana sayfalar (Portfolio, Admin, vb.)
+├── firebase.js       # Firebase yapılandırması ve bağlantısı
+└── VideoPortfolyo.jsx # Videoların listelendiği dinamik alan
+```
